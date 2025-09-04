@@ -1,0 +1,21 @@
+h1 {
+    font-size: 4.2rem !important; /* Ajuste conforme necessário */
+    font-weight: 700 !important;
+    line-height: 1.1 !important; /* Aumenta o espaçamento entre linhas */
+  }
+  
+/* Cor padrão para modo claro */
+
+  
+  h1, h2, h3 {
+    color: #000000 !important;
+  }
+  
+  
+  
+  html.dark h1, 
+  html.dark h2, 
+  html.dark h3 {
+    color: #f2f2f2 !important;
+  }
+  
