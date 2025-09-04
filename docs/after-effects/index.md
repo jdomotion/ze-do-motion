@@ -1,48 +1,34 @@
 ---
-title: Getting Started with After Effects – Beginner’s Guide
-description: New to After Effects? Learn the basics, essential tools, and first steps to start animating with confidence.
+title: Começando no After Effects
+description: Um guia inicial com analogias, quests e grind para aprender After Effects sem frustração.
 ---
 
-# Getting Started with After Effects
+# Começando no After Effects  
 
-So, you’ve decided to dive into the world of Motion Design in After Effects? Good choice! When I first started, everything felt overwhelming—so many buttons, hidden menus, and no idea where to begin. Over time, I figured out shortcuts, tricks, and workflows that made everything feel more intuitive. This space exists to document all of that: what I’ve learned, what I wish I had learned earlier, and what I’m still figuring out.  
+Quando comecei no After era bem diferente. Só tinha conteúdo em inglês (e eu não falava nada de inglês haha), os tutoriais eram em blogs com imagens estáticas e vídeo era quase luxo. Eu passava horas procurando plugins e scripts de animação, perdia mais tempo no site da Aescripts do que praticando de verdade. Usei por muito tempo o famoso plugin do cavalinho, que realmente adianta a vida, mas me deixava sem controle sobre a animação. No fim, percebi que preferia abrir mão desses atalhos que limitavam pra focar em um workflow mais limpo. Hoje ganho velocidade não porque um plugin faz tudo por mim, mas porque consigo controlar cada detalhe do processo.  
 
-This blog isn’t just about expressions, even though I like them a lot. The idea is to talk about Motion Design as a whole—from the basics to complete animation projects. I’ll be sharing full animations, testing new techniques, and showing solutions to common problems in After Effects.  
+Aqui vou falar sobre isso: workflows, atalhos e, não tenha medo, expressões. A ideia é tratar o Motion como um todo, do básico até [projetos completos](/after-effects/projetos). Quero compartilhar animações inteiras, testar técnicas novas e, principalmente, mostrar soluções pros “bugs” do After que todo mundo encontra pelo caminho. Se você acabou de chegar, talvez valha dar uma olhada no [Guia de Iniciantes](/after-effects/guia-iniciante), onde junto o básico que eu gostaria de ter aprendido lá atrás.  
 
-## First steps in After Effects  
+Eu gosto muito de analogias. Funciona bem pra mim, e o After eu gosto de comparar com um MMO. Pode ser um clássico tipo WoW, ou algo mais novo tipo New World… o ponto é o mesmo: você vai precisar aprender a buildar. E pra começar, a jornada passa por algumas quests.  
 
-If you’re just getting started, here are some good first steps:  
+## Fazendo quests  
+As quests são os tutoriais, os primeiros exercícios, as experiências básicas. Não dá pra pular direto pra uma quest endgame. Você não vai conseguir reproduzir um vídeo incrível da Buck, feito por uma equipe inteira, e se tentar provavelmente vai se frustrar.  
 
-### The basics I wish I had learned earlier  
-I’m working on a **[Beginner’s Guide](#)**, collecting everything that would have made my life easier in the beginning.  
+O caminho é encarar cursos, que são as quests principais. É ali que você realmente ganha XP e sobe de level. As side quests entram como suporte: tutoriais específicos, tipo [como animar um texto com expressões](/after-effects/expressions/introduction), que complementam o que você aprendeu no curso e deixam seu personagem mais forte.  
 
-### Exploring expressions  
-I’ve written about **[Values](/after-effects/expressions/introduction.html#understanding-values-in-expressions)**, **[Random](/after-effects/expressions/introduction.html#random-motion-wiggle)**, and **[Loops](/after-effects/expressions/introduction.html#looping-animations-loopout)** if you want to see how expressions can help automate animations.  
+Esse diário também segue essa lógica. Aqui tem conteúdos que funcionam como side quests, pequenas dicas, truques de workflow, soluções pros bugs de sempre. Mas quero trazer também quests principais: guias mais completos pra quem tá começando e séries aprofundadas sobre animação.  
 
-### Creating animations  
-Beyond just the technical side, I want to develop **full projects**, showing the entire animation process from start to finish.  
+## Grindando XP  
+O grind é inevitável. Animar no After tem muito de repetição: testar, errar, repetir, tentar de novo. É aqui que você coloca em prática o que viu nos cursos e tutoriais. Não adianta só assistir ou ler, precisa sentar, testar e explorar. Trocar alguns números do tutorial, ver como o resultado muda, experimentar até entender de verdade como funciona.  
 
-### The fun side of expressions  
-**[Motion Syntax](/after-effects/motion-syntax/)** is where I break down expressions in a more relaxed way, with practical examples and real-world applications.  
+Uma parte desse treino eu transformei no [Motion Syntax](/after-effects/motion-syntax), que são pequenos desafios de expressões pra sair do básico e testar variações. É um espaço pra praticar sem medo de errar, e cada tentativa vira XP acumulado. Parece cansativo às vezes, mas é isso que dá consistência. Cada keyframe mexido, cada loop quebrado, cada bug resolvido soma experiência. Quanto mais você pratica, mais natural fica.  
 
-## What’s next in your motion design journey?  
+## Encontrando o squad certo  
+Ninguém joga MMO sozinho. No After é a mesma coisa. Compartilhar seu trabalho, pedir feedback, ver o que os outros estão fazendo acelera muito o aprendizado.  
 
-I don’t know if you’re into gaming, but for me, learning After Effects feels a lot like playing a new game. At first, you’re lost, unsure which skills to level up, and everything seems overwhelming. But over time, you start figuring things out, discovering shortcuts, and unlocking new abilities that make everything smoother.
-
-Just like in an RPG, there’s also that heavy grind—repeating tasks, testing new things, and failing a bunch of times until you finally master them.
-
-### Doing quests  
-Watching tutorials and learning new techniques helps unlock new areas of the map.  
-
-### Grinding XP  
-The grind is real! The more you practice, the easier things get.  
-
-### Finding the right party  
-Sharing your work, seeing what others are doing, and getting feedback speeds up learning.  
-
-### Improving over time  
-With each project, you gain experience, refine your techniques, and start working more efficiently. The progress isn’t always linear, but every challenge you overcome makes a difference.  
+## Evoluindo com o tempo  
+Cada projeto é um pouco mais de XP. Você refina a técnica, começa a ganhar velocidade, entende melhor como priorizar. Nem sempre a progressão é linear, às vezes você sente que tá parado no mesmo level. Mas quando olha pra trás, percebe que já tá muito mais forte do que quando começou. E no fim das contas, é isso que faz a diferença.  
 
 :::tip  
-This blog isn’t a course or a definitive guide—it’s just a place where I document what I’m learning and what I’ve already figured out. If any of this helps you, great! If not, at least it’s a record of how I got here.   
+Esse diário não é um curso nem um guia definitivo. É só o registro da minha caminhada: o que estou aprendendo agora e o que já consegui descobrir. Se isso te ajudar, ótimo. Se não, pelo menos fica a memória do caminho percorrido.  
 :::
