@@ -14,14 +14,14 @@ Eu gosto muito de analogias. Funciona bem pra mim, e o After eu gosto de compara
 ## Fazendo quests  
 As quests são os tutoriais, os primeiros exercícios, as experiências básicas. Não dá pra pular direto pra uma quest endgame. Você não vai conseguir reproduzir um vídeo incrível da Buck, feito por uma equipe inteira, e se tentar provavelmente vai se frustrar.  
 
-O caminho é encarar cursos, que são as quests principais. É ali que você realmente ganha XP e sobe de level. As side quests entram como suporte: tutoriais específicos, tipo [como animar um texto com expressões](/after-effects/expressions/), que complementam o que você aprendeu no curso e deixam seu personagem mais forte.  
+O caminho é encarar cursos, que são as quests principais. É ali que você realmente ganha XP e sobe de level. As side quests entram como suporte: tutoriais específicos, tipo [como animar um texto com expressões](/after-effects/), que complementam o que você aprendeu no curso e deixam seu personagem mais forte.  
 
 Esse diário também segue essa lógica. Aqui tem conteúdos que funcionam como side quests, pequenas dicas, truques de workflow, soluções pros bugs de sempre. Mas quero trazer também quests principais: guias mais completos pra quem tá começando e séries aprofundadas sobre animação.  
 
 ## Grindando XP  
 O grind é inevitável. Animar no After tem muito de repetição: testar, errar, repetir, tentar de novo. É aqui que você coloca em prática o que viu nos cursos e tutoriais. Não adianta só assistir ou ler, precisa sentar, testar e explorar. Trocar alguns números do tutorial, ver como o resultado muda, experimentar até entender de verdade como funciona.  
 
-Uma parte desse treino eu transformei no [Motion Syntax](/after-effects/motion-syntax), que são pequenos desafios de expressões pra sair do básico e testar variações. É um espaço pra praticar sem medo de errar, e cada tentativa vira XP acumulado. Parece cansativo às vezes, mas é isso que dá consistência. Cada keyframe mexido, cada loop quebrado, cada bug resolvido soma experiência. Quanto mais você pratica, mais natural fica.  
+Uma parte desse treino eu transformei no [Motion Syntax](/after-effects/), que são pequenos desafios de expressões pra sair do básico e testar variações. É um espaço pra praticar sem medo de errar, e cada tentativa vira XP acumulado. Parece cansativo às vezes, mas é isso que dá consistência. Cada keyframe mexido, cada loop quebrado, cada bug resolvido soma experiência. Quanto mais você pratica, mais natural fica.  
 
 ## Encontrando o squad certo  
 Ninguém joga MMO sozinho. No After é a mesma coisa. Compartilhar seu trabalho, pedir feedback, ver o que os outros estão fazendo acelera muito o aprendizado.  
