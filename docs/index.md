@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: After Effects
-      link: /after-effecs/index
+      link: /after-effects/index
     - theme: alt
       text: Houdini
       link: /houdini/index
