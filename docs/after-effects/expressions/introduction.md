@@ -1,189 +1,81 @@
 ---
-title: Introduction to Expressions in After Effects – Beginner’s Guide
-description: Learn how expressions in After Effects can automate animations and enhance your workflow. A step-by-step introduction.
+title: Introdução às Expressões no After Effects
+description: Entenda por que usar expressões, como funcionam os valores e evite os erros mais comuns ao começar no After Effects.
 ---
 
-# Introduction to Expressions in After Effects
+# Introdução às Expressões no After Effects  
 
-::: tip 💡 **Want to follow along?**
-[Download the free project file](/downloads/after-effects-expressions-introduction-v01.aep){target="_blank" download} with all the examples used in this guide.  
-:::
+Quando comecei a brincar com expressões no After, eu me sentia quase um programador. Não me julgue haha, mas só de trocar uns valores no `wiggle` e ver a camada se mexendo sozinha, parecia coisa de outro mundo. Ao mesmo tempo, vinha aquela sensação de que esse universo não era pra mim. Eu pensava que expressões eram só pra quem manjava muito de matemática e que eu era burro demais pra aprender. Demorei bastante tempo pra desvincular essa ideia da minha cabeça e perceber que, na real, não precisa ser nenhum gênio.  
 
+:::tip  
+Foi aqui que comecei a juntar IA com motion. Uso o ChatGPT pra expressões até hoje, e você provavelmente também vai. Mas não dá pra depender só disso: entender o básico é o que permite guiar a IA e evitar erros simples.  
+:::  
 
-## Why Use Expressions?  
+Com o tempo, fui entendendo que expressões são só uma forma diferente de conversar com o After. Em vez de empilhar keyframes até perder a paciência, você escreve pequenas instruções e deixa o software fazer o trabalho. É como descobrir um atalho que já tava ali o tempo todo.  
 
-Think of expressions as the code that brings your animations to life. They let you automate those tedious tasks and create effects you'd never be able to pull off with just keyframes.  They're especially useful when you need:
-- **Precision Control**: Fine-tune movements with mathematical precision.
-- **Dynamic Interactions**: Make elements react to each other automatically.
-- **Procedural Effects**: Generate complex animations with simple rules. 
-- **Workflow Efficiency**: Save time and effort by automating repetitive tasks.
+## Por que usar expressões?  
 
-::: danger Friend or Foe?  
-Okay, let's be real – **expressions aren't always the answer**. If something's easily done with keyframes, don't overcomplicate it with code. **[Keep it simple, stupid!](https://www.youtube.com/watch?v=O58A7MJfOwU&ab_channel=OddsN%27EndsYoutube)** But when you need automation and efficiency, expressions are invaluable.  
-:::
+Expressões são aquelas linhas de código que dão vida à animação sem você precisar animar cada detalhe na mão. Elas servem pra quatro coisas que mudaram muito a forma como eu trabalho:  
 
-I know, seeing code can be intimidating at first. But trust me, stick with it! After a little practice, you'll be amazed at what you can do.  And hey, if you find these resources helpful, there's always a way to show your support and help keep NullNoodles going.
+- **Controle preciso** – quando você quer um movimento calculado no detalhe, sem depender só do arrasta-pra-cá de keyframe.  
+- **Interações dinâmicas** – quando um objeto precisa reagir a outro sozinho, sem você ficar copiando keyframe.  
+- **Efeitos procedurais** – quando dá pra gerar movimentos complexos com regras simples, tipo ondas, loops ou variações infinitas.  
+- **Agilidade no workflow** – quando a repetição cansa e você só quer que o After faça por você.  
 
-## Recommended Learning Resources  
+Claro, nem sempre é a melhor opção. Se algo pode ser resolvido com dois keyframes bem colocados, não tem por que inventar moda. Mas quando você precisa de eficiência ou de um movimento que se adapta sozinho, a expressão é imbatível.  
 
-Here are some of the best resources I’ve used (and still highly recommend) for learning expressions:
+## Entendendo valores em expressões  
 
-- The man, the beast, the myth, Dan Ebberts's [legendary blog](https://www.motionscript.com/).
-- [Animoplex](https://www.youtube.com/watch?v=SFgWa5G0VAE&list=PLvr5U5ZSt6IzHyvSL9fo0M9NRPsTvra31&ab_channel=Animoplex) has the most in-depth AE Expressions playlist I’ve ever come across.
-- [The Power of Expression](https://www.amazon.com/After-Effects-Expression-Francois-Lefebvre/dp/0578404486) by Francois Lefebvre is an absolute must!
+No After Effects, cada propriedade espera um tipo específico de valor. É como se cada uma falasse um idioma próprio — se você tentar falar outra língua, ela simplesmente não entende.  
 
-Below, you’ll find my own compilation of notes—the way I structured everything in my head to finally make expressions click. Hope it helps you too!
+- **Position** espera um array `[x, y]` (ou `[x, y, z]` em 3D).  
+- **Scale** também espera um array `[x, y]`.  
+- **Rotation** e **Opacity** querem apenas um número.  
+- **Source Text** trabalha com strings.  
 
-## How to Apply an Expression  
+E é aqui que muita gente se frustra. Você vê um exemplo de `time * 100` em um tutorial, copia e cola na **Position**, e o After joga um erro vermelho na sua cara. Isso acontece porque:  
 
-To add an expression to a property, follow these steps:  
+- `time * 100` retorna só um número, mas a Position exige um array.  
 
-1. Hold **Alt (Windows)** or **Option (Mac)** and click on the stopwatch of the property you want to modify.  
-2. The expression editor will appear below the property.  
-3. Type your expression and press **Enter** to apply it.  
-4. You can also use the **pick whip** tool to link properties easily.  
+É como tentar enfiar uma chave quadrada num buraco redondo: não encaixa.  
 
-<video autoplay loop muted playsinline width="700">
-  <source src="/videos/How_to_Apply_an_Expression.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+A solução é simples: você precisa dar pra cada propriedade o formato que ela espera.  
 
-## Understanding Values in Expressions  
+### Exemplo com `time`  
 
-One of the most crucial aspects of mastering expressions is understanding values and how they function. Once you grasp how values behave, using expressions becomes much more intuitive.  
-
-### Types of Values  
-
-- **Numbers**: `100`, `3.14`  
-- **Strings**: `"Text here"`  
-- **Booleans**: `true`, `false`  
-- **Arrays**: `[100, 200]` (used for multiple values, like position `[x, y]`)  
-- **Objects**: Properties in After Effects are objects containing values.  
-
-### Values in Different Properties  
-
-Each property in After Effects expects a specific type of value:  
-
-- **Position** works with an array `[x, y]` (or `[x, y, z]` for 3D layers).  
-- **Scale** also works with an array `[x, y]`.  
-- **Rotation** takes a single number, like `90` (degrees).  
-- **Opacity** also takes a single number, like `82`.  
-
-A great way to check the value type your expression returns is to use a **Text Layer** and apply the expression to the **Source Text** property:  
-
-```javascript
-typeof 63;          // number
-```
-```javascript
-typeof "Hello!";    // string
-```
-```javascript
-typeof [32, 124];   // array
-```
-```javascript
-typeof true;        // boolean
+```js
+// errado: dá erro, porque Position quer um array
+time * 100
 ```
 
-Using **Source Text**, you can also link values directly and see real-time updates, making it easier to debug and understand what’s happening.  
-
-## Essential Functions  
-
-### **Random Motion: `wiggle()`** 
-This is probably the most well-known expression in After Effects. If you've ever tried to add random motion to a layer, you've likely used `wiggle()`. The `wiggle()` function can return a number or an array, depending on the property where it is applied.
-
-```javascript
-wiggle(5, 50);
-```
-- If used on a **scalar property** (e.g., Opacity, Rotation), it returns a **single number** (e.g., `73.4`). 
-- If used on a **vector property** (e.g., Position, Scale, Color), it returns an **array** (e.g., `[540.2, 360.8]`).  
-
-### Applying wiggle() to a Single Axis
-
-Even when `wiggle()` returns an array, you can apply it to only one axis by extracting a single value and keeping the others unchanged. This allows you to transform `wiggle()` into a number inside an array, controlling movement on just one axis.
-If you want to apply `wiggle()` only to a specific axis (e.g., only X in Position or Scale), you can isolate the affected component:
-
-```javascript
-x = wiggle(3, 50)[0]; // Applies wiggle only to X
-y = value[1]; // Keeps Y fixed
+```js
+// certo: entregando o array [x, y]
+x = time * 100;
+y = value[1];
 [x, y];
-```
+```  
 
+## Tipos básicos de valores  
 
-### **Generating Random Values: `random()`**
-The `random()` function generates a new random value at every frame, meaning its output is not smooth over time. Unlike `wiggle()`, `random()` always returns a single number, regardless of the property where it is applied.
+- **Number (número)** → `100`, `3.14`  
+- **String (texto)** → `"Olá Mundo"`  
+- **Boolean (verdadeiro/falso)** → `true`, `false`  
+- **Array (lista de valores)** → `[100, 200]` (útil pra X e Y, por exemplo)  
+- **Object (objeto)** → a propriedade inteira, como `thisLayer.transform.position`  
 
-```javascript
-random(10,50);
-```
+### Debug com `typeof`  
 
-| Function | Behavior |
-|----------|----------|
-| `wiggle(frequency, amplitude)`  | Continuously fluctuates values over time, creating smooth variation.  |
-| `random(min, max)`  | Generates a new random value at every frame, causing rapid changes.  |
+Pra descobrir o tipo de valor que você tem em mãos, dá pra usar o `typeof` num texto (Source Text):  
 
-If you need continuous smooth variation, use `wiggle()`. If you need completely random values changing at each frame, use `random()`.
+```js
+typeof 63;        // number
+typeof "Hello!";  // string
+typeof true;      // boolean
+typeof [32, 124]; // object (arrays em JS são tratados como objetos)
+```  
 
+*(Aqui cabe bem um vídeo mostrando cada um desses casos em ação dentro do After.)*  
 
-### **Using Time in Expressions: `time`**  
-A simple and powerful function is `time`, which returns the current time in seconds.
-```javascript
-rotation = time * 30;
-```
-This makes an object rotate 30 degrees per second.
+---
 
-`time` is useful for:
-- Creating continuous movement
-- Automating animations without keyframes
-- Making elements animate at a constant rate
-
-
-
-### **Looping Animations: `loopOut()`**  
-Instead of copying and pasting keyframes forever, you can use loopOut() to automate that for you.
-
-```javascript
-loopOut("cycle");
-```
-This will make your animation repeat **continuously** after the last keyframe, seamlessly looping it.
-
-Other loop modes include:
-- `pingpong` - Alternates forward and backward like a bouncing ball.
-- `offset` - Continues the animation forward in the same direction.
-- `continue` - Extrapolates the movement beyond the last keyframe.
-
-A good way to check if your loop is working correctly is by opening the **Graph Editor** and enabling the **Show Post-Expression Graph** option. This allows you to visualize how the expression affects the animation over time.
-
-## If/Else Statements  
-
-Conditional statements in expressions allow you to control properties based on logic. This is useful for making automated decisions without manual keyframes. 
-
-```javascript
-if (time < 5) {
-  100;
-} else {
-  50;
-}
-```
-This sets the value to 100 for the first 5 seconds and 50 afterward.
-
-You can also use comparisons between properties:
-```javascript
-if (thisLayer.opacity > 50) {
-  200;
-} else {
-  100;
-}
-```
-Here, if the layer’s opacity is greater than 50, the value will be 200; otherwise, it will be 100.
-
-Using `if/else in` expressions helps automate decision-making, making your animations smarter and more flexible!
-
-## What’s Next?  
-
-Now that you’ve taken your first steps into expressions, where do you go from here?  
-
-If you’re feeling confident, check out **[Top 10 After Effects Expressions You Should Know](/after-effects/expressions/top-10)**.  
-
-If everything still seems confusing—don't worry! Expressions take time to get comfortable with. Just keep practicing, and soon, they’ll become second nature.  
-
-See you in the next guide!
+E pra não ficar só na teoria, vou deixar aqui algumas funções básicas pra você começar a colocar em prática tudo isso. [Clique aqui para seguir para Funções Essenciais](/after-effects/).  
